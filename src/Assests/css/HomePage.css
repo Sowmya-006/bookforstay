@@ -1,0 +1,213 @@
+/* HomePage.css */
+/* Style for the header */
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap");
+header {
+    text-align: center; 
+  }
+  
+  h1 {
+      padding: 20px;
+    position: relative;
+  width: 800px;
+  height: 100px;
+  
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #2d2727;
+  }
+  
+  h3 {
+    padding: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+  }
+  
+  body {
+    background-color: black;
+    background-image: url('https://img.freepik.com/free-photo/abstract-blur-defocused-hotel-lobby-lounge_74190-6102.jpg?w=996&t=st=1703092791~exp=1703093391~hmac=f1392df8071f1a33516daf0da7f9a84a10848afdefeb2ac9a2590a99779b441b');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:#000000
+  }
+  
+  .container {
+    max-width: 350px;
+    margin: auto;
+    height: 100px;
+    padding-top: 100px;
+  }
+  
+  .button {
+    display: block;
+    text-align: center; 
+    border-width: 1px 0px 1px 0;
+    border-style: solid;
+    border-image: linear-gradient(to left, transparent, rgba(224, 132, 0, 0.4), transparent);
+    border-image-slice: 1;
+    cursor: pointer;
+  }
+  
+  .text {
+      text-transform: uppercase;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.2em;
+    color: rgb(24, 24, 24);  
+    text-shadow: 0 0 13px rgba(76, 33, 4, 0.79), 0 0 32px rgba(255, 187, 24, 0.6);
+    display: block;
+    margin-bottom: -4px;
+    margin-top: 1px;
+  }
+  
+  .line-container {
+    width: 200px;
+    margin: auto;
+    position: relative;
+  }
+  
+  .line {
+    position: absolute;
+  }
+  
+  .line--thick {
+    width: 5px;
+    background-color: rgba(255, 239, 199, 1);
+  }
+  
+  .line--thin {
+    position: absolute;
+    height: 3px;
+    width: 5px;
+    background: linear-gradient(to left, rgba(255, 239, 199, 0.8), rgba(224, 132, 0, 0.4), rgba(224, 132, 0, 0.4), rgba(224, 132, 0, 0.4), rgba(255, 239, 199, 0.8));
+  }
+  
+  .thick-line--short {
+    height: 15px;
+    top: -15px;
+  }
+  
+  .thick-line--long {
+    height: 35px;
+    top: -1px;
+  }
+  
+  .line--top-right {
+    right: 0;
+    transform: skew(45deg);
+    box-shadow: 0px 0px 13px rgba(226, 97, 11, 0.85), -12px -8px 25px 3px rgba(226, 97, 11, 0.8);
+  }
+  
+  .line--top-left {
+    left: 0px;
+    transform: skew(-45deg);
+    box-shadow: 12px -8px 25px 3px rgba(226, 97, 11, 0.8), 0px 0px 13px rgba(226, 97, 11, 0.85);
+  }
+  
+  .line--bottom-right {
+    right: 12px;
+    transform: skew(-45deg);
+    box-shadow: -12px 3px 22px 3px rgba(226, 97, 11, 0.8), 0px 0px 13px rgba(226, 97, 11, 0.85);
+  }
+  
+  .line--bottom-left {
+    left: 12px;
+    transform: skew(45deg);
+    box-shadow: 12px 3px 22px 3px rgba(226, 97, 11, 0.8), 0px 0px 13px rgba(226, 97, 11, 0.85);
+  }
+  
+  .line--top {
+    width: 190px;
+    top: -17px;
+    left: 8px;
+    box-shadow: 0px 5px 34px 5px rgba(251, 169, 40, 0.26);
+  }
+  
+  .line--bottom {
+    width: 135px;
+    top: 38px;
+    left: 35px;
+    box-shadow: 0px -5px 34px 5px rgba(251, 169, 40, 0.26);
+  }
+  
+  .pseudo-class-shadow {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 22px;
+  }
+  
+  .line-container::before {
+    @extend .pseudo-class-shadow;
+    width: 40px;
+    box-shadow: -20px 10px 45px 4px rgba(251, 169, 40, 0.8);
+  }
+  
+  .line-container::after {
+    @extend .pseudo-class-shadow;
+    width: 40px;
+    box-shadow: 207px -12px 45px 4px rgba(251, 169, 40, 0.8);
+  }
+  
+  .line--top-left::before {
+    @extend .pseudo-class-shadow;
+    box-shadow: 28px 20px 34px 3px rgba(251, 169, 40, 0.8);
+  }
+  
+  .line--top-left::after {
+    @extend .pseudo-class-shadow;
+    box-shadow: 48px 20px 34px 3px rgba(251, 169, 40, 0.8);
+  }
+  
+  .line--top-right::before {
+    @extend .pseudo-class-shadow;
+    box-shadow: -48px 20px 34px 3px rgba(251, 169, 40, 0.8);
+  }
+  
+  .line--top-right::after {
+    @extend .pseudo-class-shadow;
+    box-shadow: -58px 20px 34px 3px rgba(251, 169, 40, 0.8);
+  }
+  
+  .line--bottom-right::before {
+    @extend .pseudo-class-shadow;
+    box-shadow: -42px 9px 44px 5px rgba(251, 169, 40, 0.66);
+  }
+  
+  .line--bottom-right::after {
+    @extend .pseudo-class-shadow;
+    box-shadow: -52px 10px 44px 5px rgba(251, 169, 40, 0.66);
+  }
+  
+  .line--bottom-left::before {
+    @extend .pseudo-class-shadow;
+    box-shadow: 32px 10px 44px 5px rgba(251, 169, 40, 0.66);
+  }
+  
+  .line--bottom-left::after {
+    @extend .pseudo-class-shadow;
+    box-shadow: 42px 10px 44px 5px rgba(251, 169, 40, 0.66);
+  }
+   
+  /* Style for the footer */
+  footer {
+    text-align: center;
+    padding: 50px;
+    background-color: transparent;
+  }
+  
+  /* Style for social media icons */
+  footer div {
+    margin-bottom: 10px;  
+  }
+  
+  .footer-icon {
+    margin-right: 10px;
+    margin-bottom: 0;
+    color: #333;
+  }
